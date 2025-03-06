@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Screen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            width: 80%;
+            max-width: 1200px;
+        }
+        .window {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+        }
+        .window img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ddd;
+        }
+        .window p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .window:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="window">
+            <img src="image1.jpg" alt="Image 1">
+            <p>Име 1</p>
+        </div>
+        <div class="window">
+            <img src="image2.jpg" alt="Image 2">
+            <p>Име 2</p>
+        </div>
+        <div class="window">
+            <img src="image3.jpg" alt="Image 3">
+            <p>Име 3</p>
+        </div>
+        <div class="window">
+            <img src="image4.jpg" alt="Image 4">
+            <p>Име 4</p>
+        </div>
+        <!-- Добави още прозорци по желание -->
+    </div>
+</body>
+</html>
